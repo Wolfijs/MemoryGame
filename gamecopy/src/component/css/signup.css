@@ -1,0 +1,124 @@
+
+.centered-box {
+  width: 100%;
+  
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+
+}
+
+.login-form {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.error {
+  margin-top: 5px;
+  color: red;
+  font-size: 14px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.error-container {
+  position: absolute;
+  bottom: -25px; 
+  left: 0;
+  width: 100%;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.burger-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.not-registered {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+.not-registered a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.not-registered a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .centered-box {
+    margin-top: 100px;
+    height: 95%;
+  }
+  
+  .box {
+    width: 90%;
+    height: 100%;
+  }
+  
+  .login-form {
+    height: 100%;
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .error-container {
+    bottom: -20px; 
+  }
+}

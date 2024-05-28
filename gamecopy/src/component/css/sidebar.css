@@ -1,0 +1,54 @@
+.sidebar {
+  width: 250px;
+  background-color: #111;
+  transition: transform 0.5s ease;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Added z-index to ensure sidebar overlays everything */
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-content .sidebar-link {
+  padding: 10px 0;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.sidebar-content .sidebar-link.active {
+  font-size: 1.5em; /* Increase font size for active tab */
+  text-decoration: underline; /* Add underline for active tab */
+  text-decoration-color: aqua; /* Color of the underline */
+}
+
+.burger-icon {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: black;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Ensure burger icon overlays sidebar */
+}
+
+.burger-icon.white {
+  color: white;
+}

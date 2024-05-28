@@ -1,0 +1,50 @@
+.Main {
+  display: flex;
+  height: 100vh;
+  position: relative; 
+}
+
+.content {
+  flex: 1;
+  position: relative;
+}
+
+.centered{
+  text-align: center;
+  margin-top: 20vh; 
+}
+
+.centered-box h1 {
+  font-size: 2em;
+}
+
+.big-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  animation: pulse 2s infinite; 
+  transition: background-color 0.3s ease; 
+}
+
+.big-button:hover {
+  animation-play-state: paused; 
+  background-color: rgb(var(--random-color)); 
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

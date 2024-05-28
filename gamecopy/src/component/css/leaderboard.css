@@ -1,0 +1,92 @@
+.Main {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    position: relative;
+}
+
+.centered {
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.leaderboard-table {
+    width: 100%; 
+    margin: 0 auto; 
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    transition: filter 0.3s;
+    table-layout: fixed;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.leaderboard-table th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.scrollable-table-container {
+    max-height: 40vh;
+    margin-top: 20px;
+}
+
+.table-container {
+    width: 80%;
+    overflow-y: auto;
+    margin: 0 auto; 
+    display: flex;
+}
+
+.toggle-leaderboard-type {
+    background: none;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.toggle-leaderboard-type.left {
+    background-color: #6495ED;
+}
+
+.toggle-leaderboard-type.right {
+    background-color: #FF6347;
+}
+
+.toggle-leaderboard-type.left .button-text,
+.toggle-leaderboard-type.right .button-text {
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .table-container{
+        width: 100%;
+    }
+}
